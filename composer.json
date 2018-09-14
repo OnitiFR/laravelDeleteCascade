@@ -1,0 +1,19 @@
+{
+    "name": "oniti/delete-cascade",
+    "description": "Gère la suppression en cascade des deletes",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Francois BOUYER",
+            "email": "francois@oniti.fr"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Oniti\\DeleteCascade\\": "src"
+        }
+    }
+}
