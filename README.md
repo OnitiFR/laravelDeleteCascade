@@ -1,10 +1,10 @@
 
-## Uuid For Key ##
- 
+## DeleteCascade ##
+
 ### Installation ###
- 
+
 ```
-    composer require oniti/uuid-for-key
+    composer require oniti/delete-cascade
 ```
 
 ### Exemple ###
@@ -15,14 +15,13 @@
     namespace App;
 
     use Illuminate\Database\Eloquent\Model;
-    use Oniti\UuidForKey\UuidForKey;
+    use Oniti\UuidForKey\DeleteCascade;
 
     class Article extends Model
     {
-        use UuidForKey;
+        use DeleteCascade;
 
-        public $incrementing = false;
-        protected $primaryKey = 'uuid';
+        protected $cascadeDeletes = ['posts'];
     }
 
     ?>
