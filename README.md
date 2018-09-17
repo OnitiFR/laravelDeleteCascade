@@ -15,7 +15,7 @@
     namespace App;
 
     use Illuminate\Database\Eloquent\Model;
-    use Oniti\UuidForKey\DeleteCascade;
+    use Oniti\DeleteCascade\DeleteCascade;
 
     class Article extends Model
     {
