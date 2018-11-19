@@ -30,6 +30,8 @@ trait DeleteCascade
             }
           }
         }
+        
+        $model->deleting($model);
 
       }
     });
